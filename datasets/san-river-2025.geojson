@@ -1,5 +1,8 @@
 {
   "type": "FeatureCollection",
+  "copyright": "© 2025 stansy",
+  "license": "CC-BY 4.0",
+  "attribution": "created by Stanisław Sypniewski - Poland (https://github.com/stansy60/floatigans)",  
   "features": [
     {
       "id": 0,
