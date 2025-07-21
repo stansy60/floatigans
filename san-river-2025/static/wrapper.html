@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spływ kajakowy Sanem 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="stansy - Poland (https://github.com/stansy60/floatigans)">
+    <meta name="title" content="Grupa Toruń - Spływ kajakowy rzeką San">
+    <meta name="keywords" content="Floatigans, stansy, kajaki, turystyka kajakowa, San, Folium, OpenStreetMaps, JavaScript, kodowanie, open water project">
+    <meta name="description" content="Mapa trasy spływu kajakowego stworzona przy pomocy Pythona, Folium i JavaScriptu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles.css">    
+  </head>    <
+  <body>
+        {MAP_HTML}
+        <div class="legend-box"> 
+            <div class="title">HUMAK KAJAKIEM</div>
+            <div class="subtitle">GRUPA TORUŃ: spływ kajakowy rzeką San wrzesień 2025</div>
+            <img src="./images/flag-humbak.png" alt="logo" class="flag-humbak" />
+            <div class="schedule">
+                <p>
+                    <strong>Opis trasy:</strong><br/>{SCHEDULE}
+                </p>
+                <p>
+                    <strong>Obiekty zabytkowe i ikony regionu: </strong>{MONUMENTS}
+                </p>
+            </div>
+        </div>
+      <script src="static/scripts.js" defer></script>
+  </body>
+</html>

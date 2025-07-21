@@ -1,0 +1,75 @@
+html, body, html * {
+  font-family: 'Roboto', sans-serif;
+}
+
+.legend-box {
+    position: fixed; 
+    bottom:60px; 
+    right:40px; 
+    width: 700px;
+    border: 3px solid grey;
+    border-radius: 25px;
+    z-index:999;
+    background-color:#f7f4ea;
+    font-size:14px;
+    padding:18px
+}
+
+.legend-box>.title {
+    font-family: "Crimson Text", serif;
+    color: #563f32;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.legend-box>.subtitle {
+    font-family: "Crimson Text", serif;
+    font-size: 20px;
+    color:#563f32;
+    font-weight: 600;
+    margin-bottom:1em; 
+    border-bottom: 2px solid #563f32;
+    width: fit-content;
+}
+
+.legend-box p {
+  padding: 0 1.2em;      
+  text-indent: -1.2em;
+}
+
+.legend-box>.schedule {
+    font-size: 16px;
+}
+
+.legend-box>.schedule>p>.relic {
+    font-family: "Times New Roman", Times, serif;
+    font-style:italic
+}
+
+.flag-humbak {
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    max-width: 200px;
+    height: auto;
+    pointer-events: none;
+}
+
+.camp-icon {
+    display: flex;
+}
+
+.camp-icon > .camp-icon-img {
+    width: 26px;
+    height: 26px;
+    margin-right: 6px;
+}
+
+.camp-icon > .camp-icon-label {
+    line-height: 1.1em;
+    color: #014d01;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500
+}
+
