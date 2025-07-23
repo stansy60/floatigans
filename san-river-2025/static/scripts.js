@@ -9,9 +9,6 @@ function waitForFoliumMap() {
             console.log("Mapa znaleziona:", key);
             min_zoom(map);
             map_boundaries(map);
-            map.on('moveend zoomend', function() {
-                updateMapInfo(map);
-            });
             bindMarkerClickEvents();
             return; 
         }
@@ -53,4 +50,16 @@ function map_boundaries(map) {
     });
 }
 
+function toggleLegend() {
+  const box = document.getElementById('legendBox');
+  const icon = document.getElementById('legendIcon');
 
+  const isCollapsed = box.classList.toggle('collapsed');
+
+  // steruj widocznością ikony FA poza legendą
+  if (isCollapsed) {
+    icon.style.visibility = 'visible';
+  } else {
+    icon.style.visibility = 'hidden';
+  }
+}
