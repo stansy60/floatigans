@@ -1,4 +1,5 @@
-# ![Logo](./images/small-whale.png) San River 2025 – Kayaking Route
+![Logo](./images/small-whale.png)
+# San River 2025 – Kayaking Route
 
 This project aims to demonstrate how, with minimal effort, a simple set of dependencies, and a clean file structure, it's possible to create a clear, functional, and visually pleasant map — suitable for both desktop and mobile devices.
 
