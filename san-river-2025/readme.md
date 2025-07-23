@@ -1,5 +1,4 @@
-![logo](./images/logo.png) 
-<h1 style="margin-top:-50px; margin-left:120px">San River 2025 – Kayaking Route</h1> 
+# ![Logo](./images/small-whale.png) San River 2025 – Kayaking Route
 
 This project aims to demonstrate how, with minimal effort, a simple set of dependencies, and a clean file structure, it's possible to create a clear, functional, and visually pleasant map — suitable for both desktop and mobile devices.
 
@@ -21,15 +20,15 @@ This project shows that even with a small set of dependencies and a simple file 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ ___mylib/___  &nbsp; &nbsp; &nbsp; _(in preparation: utility libraries)_<br/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ ___static/___ *.\* &nbsp; _(external files linked to the generated HTML)_ <br/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ helpers.ipynb _(in progress: tools for creating map data and components)_ <br/>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ kayaking.html _(project website)_ <br/>
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ kayaking.ipynb _(in progress: notebook for generating the map)_ <br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ index.html _(project website)_ <br/>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ├─ index.ipynb _(in progress: notebook for generating the map)_ <br/>
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; └─ readme.md  (_this page)_<br/>
 
 ---
 
 ## 🔍 Online Preview
 
-👉 [Click here to view the map](https://stansy60.github.io/floatigans/san-river-2025/kayaking.html)
+👉 [Click here to view the map](https://stansy60.github.io/floatigans/san-river-2025/)
 
 ---
 
