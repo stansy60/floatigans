@@ -1,7 +1,7 @@
 
 ![Whale](https://raw.githubusercontent.com/stansy60/floatigans/main/san-river-2025/images/small-whale.png)
-
 ![Whale](/san-river-2025/images/small-whale.png)
+![Whale](https://raw.githubusercontent.com/stansy60/floatigans/main/san-river-2025/images/small-whale.png)
 
 
 # San River 2025 – Kayaking Route
