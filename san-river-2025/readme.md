@@ -3,8 +3,8 @@
 ![Whale](/san-river-2025/images/small-whale.png)
 ![Whale](/san-river-2025/images/small-whale.png)
 ![Whale](floatigans/san-river-2025/images/small-whale.png)
-![Whale](/images/small-whale.png)
-![Whale](fimages/small-whale.png)
+![Whale](./images/small-whale.png)
+![Whale](images/small-whale.png)
 
 
 
