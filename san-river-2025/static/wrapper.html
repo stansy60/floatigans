@@ -2,11 +2,11 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8">
-        <title>Spływ kajakowy Sanem 2025</title>
+        <title>Spływ Sanem</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="stansy - Poland (https://github.com/stansy60/floatigans)">
         <meta name="title" content="Grupa Toruń - Spływ kajakowy rzeką San">
-        <meta name="keywords" content="Floatigans, stansy, kajaki, turystyka kajakowa, San, Folium, OpenStreetMaps, JavaScript, kodowanie, open water project">
+        <meta name="keywords" content="Floatigans, stansy, kajaki, turystyka kajakowa, San, Folium, OpenStreetMaps, JavaScript, kodowanie, Toruń">
         <meta name="description" content="Mapa trasy spływu kajakowego stworzona przy pomocy Pythona, Folium i JavaScriptu.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="static/styles.css">    
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> 
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     </head>
     <body>
           {MAP_HTML}
@@ -39,7 +41,10 @@
             </div>
           </div>
           </div>
-          <script src="static/scripts.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OverlappingMarkerSpiderfier-Leaflet/0.2.6/oms.min.js"
+                integrity="sha512-V8RRDnS4BZXrat3GIpnWx+XNYBHQGdK6nKOzMpX4R0hz9SPWt7fltGmmyGzUkVFZUQODO1rE+SWYJJkw3SYMhg=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="static/scripts.js"></script>
     </body>
 </html>
 

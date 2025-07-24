@@ -121,8 +121,6 @@ html, body, html * {
   vertical-align: middle;
 }
 
-
-
 .camp-icon {
     display: flex;
     .icon-img {
@@ -139,6 +137,13 @@ html, body, html * {
     }
 }
 
+.bus-tooltip-container {
+    padding: 10px;
+    background-color: red;
+    .label {
+        font-size: 12px;
+    }    
+}
 
 .icon-collapsed {
     font-size: 24px;

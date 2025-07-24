@@ -14,21 +14,7 @@ function waitForFoliumMap() {
         }
     }
     console.log("Jeszcze nie znaleziono mapy...");
-    setTimeout(waitForFoliumMap, 100);
-}
-
-function bindMarkerClickEvents() {
-    for (let key in window) {
-        if (key.startsWith("marker_") && window[key] instanceof L.Marker) {
-            const marker = window[key];
-            marker.on('click', function (e) {
-                const lat = e.latlng.lat.toFixed(5);
-                const lng = e.latlng.lng.toFixed(5);
-                const url = `https://www.google.com/maps/place/${lat},${lng}?hl=pl`;
-                window.open(url, '_blank');
-            });
-        }
-    }
+    setTimeout(waitForFoliumMap, 200);
 }
 
 function min_zoom(map) {
@@ -47,6 +33,38 @@ function map_boundaries(map) {
 
     map.on("drag", function () {
         map.panInsideBounds(bounds, { animate: false });
+    });
+}
+
+function bindMarkerClickEvents() {
+    const mapKey = Object.keys(window).find(k => k.startsWith("map_"));
+    if (!mapKey || !(window[mapKey] instanceof L.Map)) {
+        console.warn("Nie znaleziono mapy do OMS.");
+        return;
+    }
+    const map = window[mapKey];
+    const oms = new OverlappingMarkerSpiderfier(map);
+
+    for (let key in window) {
+        if (key.startsWith("marker_") && window[key] instanceof L.Marker) {
+            const marker = window[key];
+            oms.addMarker(marker);
+        }
+    }
+
+    oms.addListener('click', function (marker) {
+        const lat = marker.getLatLng().lat.toFixed(5);
+        const lng = marker.getLatLng().lng.toFixed(5);
+        const url = `https://www.google.com/maps/place/${lat},${lng}?hl=pl`;
+        window.open(url, '_blank');
+    });
+
+    oms.addListener('spiderfy', function (markers) {
+        markers.forEach(m => m.setZIndexOffset(1000));
+    });
+
+    oms.addListener('unspiderfy', function (markers) {
+        markers.forEach(m => m.setZIndexOffset(0));
     });
 }
 
